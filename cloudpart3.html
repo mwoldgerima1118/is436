@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+
+      
+
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+    <img border="0" alt="Logo" src="https://styleguide.umbc.edu/files/2019/03/UMBC-primary-logo-CMYK-on-black.png" width="100" height="100">
+  <font color="white">  UMBC IS Program </font>
+    
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="https://informationsystems.umbc.edu/about/">About</a></li>
+        <li><a href="https://informationsystems.umbc.edu/home/undergraduate-programs/">Projects</a></li>
+        <li><a href="https://about.umbc.edu/visitors-guide/contact-us/">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://my.umbc.edu/login?return_url=https%3A%2F%2Fmy.umbc.edu%2F"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://userscontent2.emaze.com/images/5537845b-84da-4415-97b7-b9a218981e7e/6d598be17a42823643895997325911f9.png">
+        <div class="carousel-caption">
+          <h3>The Animation</h3>
+          <p>Information on traversal</p>
+        </div>      
+      </div>
+
+      <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="data:image/jpeg;base64,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">
+        <div class="carousel-caption">
+          <h4>The Cloud</h4>
+          <p>Information on Cloud</p>
+        </div>      
+      </div>
+
+      <div class="item">
+      <!--edit with your own src url-->
+      <img border="0"  src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpa82ImgHitWI1oCGnEnYwPkvXOcBRaRbdLXZldPf5fFU_KyZv&s" width="500" height="500">
+       <!-- <img src="https://healthresearch.org/wp-content/uploads/2016/05/information-systems.jpg"  alt="Different Departments">-->
+        <div class="carousel-caption">
+          <!--edit with your own text for h3 and p-->
+          <h3>Another Example</h3>
+          <p>All of the Different sections</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+  
+<div class="container text-center">    
+  <h3>What We Do</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src= "https://thumbs.dreamstime.com/z/computer-motherboard-cpu-circuit-board-system-chip-co-computer-motherboard-cpu-circuit-board-system-chip-core-101811177.jpg" style="width:100%" alt="Image">
+      <p>Circuit project</p>
+    </div>
+    <div class="col-sm-4"> 
+      
+      <p>Cloud Project</p> 
+      <p> Benefits: </p>
+      <p> Usability And Accessibility. </p>
+      <p>Disaster Recovery. </p>
+      <p>Security.</p>
+      <p>Cost Savings. </p>
+      <p>Easy Sharing. </p>
+      <p>Automation.</p>
+      <p>Collaboration.</p>
+      <p>Scalable Service.</p>
+      </div>   
+    </div>
+    <div class="col-sm-4">
+      <div class="well">
+       <p>Our first project deals with creating a new circuit board for the class. It will be made in house so no 3rd party materials will be used. </p>
+      </div>
+      <div class="well">
+       <p>Our second project is a cloud project trying to improve UMBC's storage issues.</p>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+
+
+
+<footer class="container-fluid text-center">
+  <p> Our Program deals has expanded to more cloud based functions. </p>
+</footer>
+
+</body>
+</html>
